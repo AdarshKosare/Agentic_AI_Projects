@@ -30,6 +30,15 @@ class Settings(BaseSettings):
     @property
     def has_tavily(self) -> bool:
         return bool(self.tavily_api_key)
+<<<<<<< HEAD
+=======
+    
+    # RAG
+    embedding_model: str = Field(default="all-MiniLM-L6-v2")
+    chroma_persist_dir: str = Field(default="./chroma_db")
+    chunk_size: int = Field(default=512)
+    chunk_overlap: int = Field(default=64)
+>>>>>>> d1fcc8d (RAG + Memory Integration)
 
 
 settings = Settings()
