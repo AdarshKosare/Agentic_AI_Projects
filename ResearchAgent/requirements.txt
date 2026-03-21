@@ -1,0 +1,31 @@
+# Core LLM + Agent framework
+langchain==0.3.7
+langchain-google-genai==2.0.7
+langchain-community==0.3.7
+langgraph==0.2.50
+
+# Local LLM (Ollama fallback)
+langchain-ollama==0.2.1
+
+# Tools
+tavily-python==0.5.0        # web search (free tier: 1000 calls/month)
+duckduckgo-search==6.3.5    # free fallback search
+
+# RAG + Vector DB (Week 2)
+chromadb==0.5.20
+sentence-transformers==3.3.1
+
+# API (Week 4)
+fastapi==0.115.5
+uvicorn==0.32.1
+python-multipart==0.0.17
+
+# Evals (Week 4)
+ragas==0.2.6
+
+# Utilities
+python-dotenv==1.0.1
+pydantic==2.10.1
+pydantic-settings==2.6.1
+rich==13.9.4                # beautiful terminal output
+httpx==0.28.0
