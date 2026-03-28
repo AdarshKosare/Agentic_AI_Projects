@@ -30,10 +30,8 @@ def _duckduckgo_search(query: str) -> str:
             results.append(f"[{i}] {r['title']}\nURL: {r['href']}\n{r['body']}")
     return "\n\n---\n\n".join(results)
 
-<<<<<<< HEAD
 
 SEARCH_TOOLS = [web_search]
-=======
 @tool
 def search_knowledge_base(query: str) -> str:
     """
@@ -51,4 +49,3 @@ def search_knowledge_base(query: str) -> str:
 
 # Update the export list
 SEARCH_TOOLS = [search_knowledge_base, web_search]
->>>>>>> d1fcc8d (RAG + Memory Integration)
